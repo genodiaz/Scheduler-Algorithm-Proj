@@ -61,7 +61,7 @@ public class FCFSScheduler implements Scheduler {
 		  }
 		  // We now have the index of the Process with lowest Arrival time
 		  else {
-			  jobStart = totalTime;
+			  jobStart = totalTime; 
 			  jobFinish = totalTime + numbers.get(toProcessIndex + 1);
 			  waitTime = totalTime - numbers.get(toProcessIndex);
 			  totalTime += numbers.get(toProcessIndex + 1);
@@ -84,5 +84,6 @@ public class FCFSScheduler implements Scheduler {
 	  System.out.println(averageWaitTime / (numbers.size()/3) + " " 
 			  + averageTurnaroundTime / (numbers.size()/3));
 	  
+	  // Here is a change
   }
 }
